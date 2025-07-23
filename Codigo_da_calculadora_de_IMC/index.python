@@ -1,0 +1,49 @@
+#Calculadora de IMC
+print('----'*20)
+print('Bem vindo a calculadora de indice de massa corporal (IMC)')
+print('----'*20)
+a = str(input('Você e adulto ?')).strip().title()
+if a == ('Sim'):
+    print('Preencha os dados precisamente')
+    kg = float(input('Qual e seu peso em kilogramas?'))
+    altura = float(input('Qual e seu altura'))
+    imc = kg / altura**2
+    print('seu indice de massa corporal é {:.1f}'.format(imc))
+    if(imc <= 18.5):
+        print('Seu IMC esta abaico do normal. Esta no nivel ABAIXO DO NORMAL')
+    elif(18.6 < imc < 24.9):
+        print('Seu IMC esta normal. Esta no nivel NORMAL')
+    elif(25.0 < imc < 29.9):
+        print('Seu IMC esta acima do normal. Esta no nivel de SOBREPESO')
+    elif (30.0 < imc < 34.9):
+        print('Seu IMC esta acima do normal. Esta no nivel de OBESIDADE GRAU 1')
+    elif(35.0 < imc < 39.9):
+        print('Seu IMC esta acima do normal. Esta no nivel de OBESIDADE GRAU 2')
+    else:
+        print('Seu IMC esta acima do normal. Esta no nivel de OBESIDADE GRAU 3')
+else:
+    print('Esta calculadora so executa IMC de adultos')
+#Segunda parte da calculadora de IMC informações extras
+print('----'*20)
+i = str(input('Gostaria de Receber alguma informação sobre os niveis do IMC ?')).strip().title()
+print('----'*20)
+if i == ('Sim'):
+    print('Sobre qual nivel de IMC você quer saber mais? segue abaixo as opções')
+    print(' Digite 1 para ABAIXO DO PESO \n Digite 2 para PESO NORMAL \n Digite 3 para SOBREPESO \n Digite 4 para OBESIDADE GRAU 1 \n Digite 5 para OBESIDADE GRAU 2 \n Digite 6 para OBSIDADE GRAU 3')
+    num = int(input('Sobre qual nivel voce gostaria de falar? '))
+    if num == 1:
+        print('Procure um médico. Algumas pessoas têm um baixo peso por características do seu organismo e tudo bem. Outras podem estar enfrentando problemas, como a desnutrição. É preciso saber qual é o caso.')
+    elif num == 2:
+        print('Que bom que você está com o peso normal! E o melhor jeito de continuar assim é mantendo um estilo de vida ativo e uma alimentação equilibrada.')
+    elif num == 3:
+        print('Ele é, na verdade, uma pré-obesidade e muitas pessoas nessa faixa já apresentam doenças associadas, como diabetes e hipertensão. Importante rever hábitos e buscar ajuda antes de, por uma série de fatores, entrar na faixa da obesidade pra valer.')
+    elif num == 4:
+        print('Sinal de alerta! Chegou na hora de se cuidar, mesmo que seus exames sejam normais. Vamos dar início a mudanças hoje! Cuide de sua alimentação. Você precisa iniciar um acompanhamento com nutricionista e/ou endocrinologista.')
+    elif num == 5:
+        print('Mesmo que seus exames aparentem estar normais, é hora de se cuidar, iniciando mudanças no estilo de vida com o acompanhamento próximo de profissionais de saúde.')
+    elif num == 6:
+        print('Aqui o sinal é vermelho, com forte probabilidade de já existirem doenças muito graves associadas. O tratamento deve ser ainda mais urgente.')
+    else:
+        print('Não existe essa opção, sistema sendo fechado')
+else:
+    print('OK programa sendo fechado')
