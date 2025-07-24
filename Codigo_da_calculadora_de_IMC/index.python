@@ -1,4 +1,4 @@
-#Calculadora de IMC
+#Calculadora de IMC V1
 print('----'*20)
 print('Bem vindo a calculadora de indice de massa corporal (IMC)')
 print('----'*20)
