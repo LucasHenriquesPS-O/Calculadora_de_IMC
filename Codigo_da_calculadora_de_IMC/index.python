@@ -1,4 +1,4 @@
-#Calculadora de IMC  V1
+#Calculadora de IMC V1
 print('----'*20)
 print('Bem vindo a calculadora de indice de massa corporal (IMC)')
 print('----'*20)
@@ -23,7 +23,7 @@ if a == ('Sim'):
         print('Seu IMC esta acima do normal. Esta no nivel de OBESIDADE GRAU 3')
 else:
     print('Esta calculadora so executa IMC de adultos')
-#Segunda parte da calculadora de IMC informações extras V1
+#Segunda parte da calculadora de IMC informações extras V1 
 print('----'*20)
 i = str(input('Gostaria de Receber alguma informação sobre os niveis do IMC ?')).strip().title()
 print('----'*20)
